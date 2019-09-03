@@ -18,6 +18,26 @@
                   </span>
                 </div>
               </div>
+              <div class="field">
+                <label class="label">Password</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="password" placeholder="********" required>
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-lock" />
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  Remember me
+                </label>
+              </div>
+              <div class="field">
+                <button class="button is-success">
+                  Login
+                </button>
+              </div>
             </form>
           </div>
         </div>
