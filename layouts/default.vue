@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar has-shadow">
+    <nav class="navbar has-shadow is-fixed-top">
       <div class="navbar-brand">
         <a class="navbar-item">
           <img src="https://robohash.org/bumble" alt="">
