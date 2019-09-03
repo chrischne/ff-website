@@ -26,6 +26,16 @@
 // $input-border-color: transparent;
 // $input-shadow: none;
 
+// 2. Set your own initial variables
+// Update blue
+$blue: #72d0eb;
 
+// Add pink and its invert
+
+$pink: #ffb3b3;
+$pink-invert: #fff;
+
+// Add a serif family
+$family-serif: "Merriweather", "Georgia", serif;
 
 @import '~bulma';
