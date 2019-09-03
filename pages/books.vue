@@ -88,6 +88,182 @@
             </div>
           </div>
         </nav>
+        <div class="columns is-multiline">
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="https://robohash.org/tasse" width="80">
+                </aside>
+
+                <div class="media-content">
+                  <p class="title is-5 is-spaced is-marginless">
+                    <a href="edit-book.html">
+                      TensorFlow For Machine Intelligence
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $22.99
+                  </p>
+                  <div class="content is-small">
+                    270 pages
+                    <br>
+                    ISBN: 9781939902351<br>
+                    <a href="edit-book.html">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="https://robohash.org/tonga" width="80">
+                </aside>
+
+                <div class="media-content">
+                  <p class="title is-5 is-spaced is-marginless">
+                    <a href="edit-book.html">
+                      TensorFlow For Machine Intelligence
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $22.99
+                  </p>
+                  <div class="content is-small">
+                    270 pages
+                    <br>
+                    ISBN: 9781939902351<br>
+                    <a href="edit-book.html">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="https://robohash.org/tallia" width="80">
+                </aside>
+
+                <div class="media-content">
+                  <p class="title is-5 is-spaced is-marginless">
+                    <a href="edit-book.html">
+                      TensorFlow For Machine Intelligence
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $22.99
+                  </p>
+                  <div class="content is-small">
+                    270 pages
+                    <br>
+                    ISBN: 9781939902351<br>
+                    <a href="edit-book.html">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="https://robohash.org/tolledo" width="80">
+                </aside>
+
+                <div class="media-content">
+                  <p class="title is-5 is-spaced is-marginless">
+                    <a href="edit-book.html">
+                      TensorFlow For Machine Intelligence
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $22.99
+                  </p>
+                  <div class="content is-small">
+                    270 pages
+                    <br>
+                    ISBN: 9781939902351<br>
+                    <a href="edit-book.html">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="https://robohash.org/tello" width="80">
+                </aside>
+
+                <div class="media-content">
+                  <p class="title is-5 is-spaced is-marginless">
+                    <a href="edit-book.html">
+                      TensorFlow For Machine Intelligence
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $22.99
+                  </p>
+                  <div class="content is-small">
+                    270 pages
+                    <br>
+                    ISBN: 9781939902351<br>
+                    <a href="edit-book.html">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+            <article class="box">
+              <div class="media">
+                <aside class="media-left">
+                  <img src="https://robohash.org/tolle" width="80">
+                </aside>
+
+                <div class="media-content">
+                  <p class="title is-5 is-spaced is-marginless">
+                    <a href="edit-book.html">
+                      TensorFlow For Machine Intelligence
+                    </a>
+                  </p>
+                  <p class="subtitle is-marginless">
+                    $22.99
+                  </p>
+                  <div class="content is-small">
+                    270 pages
+                    <br>
+                    ISBN: 9781939902351<br>
+                    <a href="edit-book.html">Edit</a>
+                    <span>·</span>
+                    <a>Delete</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </div>
   </section>
