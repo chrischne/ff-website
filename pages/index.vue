@@ -1,7 +1,9 @@
 <template>
   <div>
     <section class="section edo-theme">
-      <h1 class="hello-nuxt">Hello Nuxt!</h1>
+      <h1 class="hello-nuxt">
+        Hello Nuxt!
+      </h1>
     </section>
     <section class="section">
       <a
@@ -24,5 +26,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 </style>
