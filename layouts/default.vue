@@ -3,10 +3,10 @@
     <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <img class="navbar-item" src="logo.png">
+          <img class="navbar-item" src="logo3.png">
         </a>
-        <div class="navbar-item has-text-weight-bold is-size-6a">
-          The Independent Research Lab
+        <div class="navbar-item has-text-weight-bold is-size-2 is-uppercase narrow">
+          <!-- The ReSEARCH Lab -->
         </div>
         <a
           role="button"
@@ -58,6 +58,9 @@ export default {
   }
 }
 </script>
-<style>
-
+<style scoped>
+.narrow{
+  /* max-width: 300px; */
+  font-weight: 800;
+}
 </style>
