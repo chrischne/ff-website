@@ -1,12 +1,12 @@
 <template>
   <div>
-    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+    <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
           <img class="navbar-item" src="logo.png">
         </a>
         <div class="navbar-item has-text-weight-bold is-size-6a">
-          The Independent Research Lab (TINDR Lab)
+          The Independent Research Lab
         </div>
         <a
           role="button"
