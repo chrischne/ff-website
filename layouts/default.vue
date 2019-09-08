@@ -25,22 +25,22 @@
 
       <div id="navbarBasicExample" class="navbar-menu" :class="{'is-active': isOpen}">
         <div class="navbar-end">
-          <a class="navbar-item has-text-weight-semibold is-size-6a">
+          <a class="navbar-item has-text-weight-semibold is-size-6a is-uppercase">
             Home
           </a>
-          <a class="navbar-item has-text-weight-semibold is-size-6a">
+          <a class="navbar-item has-text-weight-semibold is-size-6a is-uppercase">
             Projects
           </a>
-          <a class="navbar-item has-text-weight-semibold is-size-6a">
+          <a class="navbar-item has-text-weight-semibold is-size-6a is-uppercase">
             People
           </a>
-          <a class="navbar-item has-text-weight-semibold is-size-6a">
+          <a class="navbar-item has-text-weight-semibold is-size-6a is-uppercase">
             About
           </a>
-          <a class="navbar-item has-text-weight-semibold is-size-6a">
+          <a class="navbar-item has-text-weight-semibold is-size-6a is-uppercase">
             Join
           </a>
-          <a class="navbar-item has-text-weight-semibold is-size-6a">
+          <a class="navbar-item has-text-weight-semibold is-size-6a is-uppercase">
             Contact
           </a>
         </div>
