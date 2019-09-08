@@ -6,16 +6,24 @@
           <img class="navbar-item" src="logo.png">
         </a>
         <div class="navbar-item has-text-weight-bold is-size-6a">
-          Independent Research Center
+          The Independent Research Lab (TINDR Lab)
         </div>
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+          :class="{'is-active': isOpen}"
+          @click="isOpen = !isOpen"
+        >
           <span aria-hidden="true" />
           <span aria-hidden="true" />
           <span aria-hidden="true" />
         </a>
       </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div id="navbarBasicExample" class="navbar-menu" :class="{'is-active': isOpen}">
         <div class="navbar-end">
           <a class="navbar-item has-text-weight-semibold is-size-6a">
             Home
@@ -41,7 +49,15 @@
     <nuxt />
   </div>
 </template>
-
+<script>
+export default {
+  data () {
+    return {
+      isOpen: false
+    }
+  }
+}
+</script>
 <style>
 
 </style>
