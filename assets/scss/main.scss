@@ -1,8 +1,5 @@
-@import 'bulma/sass/utilities/_all.sass';
-
-// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-// // Import a Google Font
-// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+//@import 'bulma/sass/utilities/_all.sass';
+@import '~bulma/sass/utilities/initial-variables'; @import '~bulma/sass/utilities/functions';
 
 // Set your brand colors
 // $purple: #8A4D76;
@@ -12,7 +9,9 @@
 // $beige-lighter: #EFF0EB;
 
 // // Update Bulma's global variables
-// $family-sans-serif: "Nunito", sans-serif;
+//$family-sans-serif: "Nunito", sans-serif;
+//$family-sans-serif: sans-serif;
+
 // $grey-dark: $brown;
 // $grey-light: $beige-light;
 // $primary: $purple;
@@ -28,14 +27,31 @@
 
 // 2. Set your own initial variables
 // Update blue
-$blue: #72d0eb;
+//$blue: #72d0eb;
 
 // Add pink and its invert
 
-$pink: #ffb3b3;
-$pink-invert: #fff;
+//$pink: #ffb3b3;
+//$pink-invert: #fff;
 
 // Add a serif family
-$family-serif: "Merriweather", "Georgia", serif;
+//$family-serif:  -apple-system, system-ui, sans-serif;
+$family-sans-serif: -apple-system, system-ui, sans-serif;
+//$navbar-item-img-max-height: 70px;
+
+
+$navbar-item-color: $black;
+$navbar-height: 5rem;
+$navbar-item-img-max-height: 4rem;
+
+.is-size-6a{
+    font-size: 0.9rem;
+}
+// customize styles
+
+//$black: #343434; 
+//$family-sans-serif: Avenir, sans-serif;
+
+
 
 @import '~bulma';

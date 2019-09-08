@@ -1,0 +1,48 @@
+<template>
+  <div>
+    <nav class="navbar has-shadow is-fixed-top">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="logo.png" alt="">
+        </a>
+        <div class="navbar-item">
+          asdf
+        </div>
+        <div class="navbar-burger">
+          <span />
+          <span />
+          <span />
+        </div>
+        <!-- Logo, tagline, and navbar-burger -->
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            Home
+          </div>
+          <div class="navbar-item">
+            Projects
+          </div>
+          <div class="navbar-item">
+            People
+          </div>
+          <div class="navbar-item">
+            About
+          </div>
+          <div class="navbar-item">
+            Join
+          </div>
+          <div class="navbar-item">
+            Contact
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nuxt />
+  </div>
+</template>
+
+<style>
+
+</style>

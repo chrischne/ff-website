@@ -1,55 +1,40 @@
 <template>
   <div>
-    <nav class="navbar has-shadow is-fixed-top">
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item">
-          <img src="https://robohash.org/bumble" alt="">
+        <a class="navbar-item" href="/">
+          <img class="navbar-item" src="logo.png">
         </a>
-        <div class="navbar-burger">
-          <span />
-          <span />
-          <span />
+        <div class="navbar-item has-text-weight-bold is-size-6a">
+          Independent Research Center
         </div>
-        <!-- Logo, tagline, and navbar-burger -->
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+        </a>
       </div>
 
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <div class="navbar-item">
-            <small>Publishing at the speed of technology</small>
-          </div>
-        </div>
+      <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-end">
-          <div class="navbar-item has-dropdown is-hoverable">
-            <div class="navbar-link">
-              Alex Johnson
-            </div>
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                <div>
-                  <span class="icon is-small">
-                    <i class="fa fa-user-circle-o" />
-                  </span>
-                  Profile</div>
-              </a>
-              <a class="navbar-item">
-                <div>
-                  <span class="icon is-small">
-                    <i class="fa fa-bug" />
-                  </span>
-                  Report bug
-                </div>
-              </a>
-              <a class="navbar-item">
-                <div>
-                  <span class="icon is-small">
-                    <i class="fa fa-sign-out" />
-                  </span>
-                  Sign Out
-                </div>
-              </a>
-            </div>
-          </div>
+          <a class="navbar-item has-text-weight-semibold is-size-6a">
+            Home
+          </a>
+          <a class="navbar-item has-text-weight-semibold is-size-6a">
+            Projects
+          </a>
+          <a class="navbar-item has-text-weight-semibold is-size-6a">
+            People
+          </a>
+          <a class="navbar-item has-text-weight-semibold is-size-6a">
+            About
+          </a>
+          <a class="navbar-item has-text-weight-semibold is-size-6a">
+            Join
+          </a>
+          <a class="navbar-item has-text-weight-semibold is-size-6a">
+            Contact
+          </a>
         </div>
       </div>
     </nav>
