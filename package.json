@@ -16,6 +16,7 @@
     "@nuxtjs/font-awesome": "^1.0.4",
     "@nuxtjs/style-resources": "^1.0.0",
     "add": "^2.0.6",
+    "lodash": "^4.17.15",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {

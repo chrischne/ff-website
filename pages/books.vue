@@ -18,7 +18,7 @@
             <li>
               <a class="is-active" href="books.html">
                 <span class="icon">
-                  <i class="fa fa-book" />
+                  <i class="fas fa-arrow-right" />
                 </span>
                 Books
               </a>

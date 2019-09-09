@@ -1,41 +1,73 @@
 <template>
-  <div>
-    <section class="section edo-theme">
-      <h1 class="hello-nuxt">
-        Hello Nuxt!
-      </h1>
-    </section>
-    <section class="section">
-      <a
-        class="button is-primary is-rounded"
-        @click="doClick"
-      >Rounded</a>
-    </section>
-    <section class="section">
-      <p>
-        But we’ve met before in a Vision. That was a long time ago, I was a kid at St. Swithin’s, It used to be funded by the Wayne Foundation. It’s an orphanage. My mum died when I was small, it was a car accident. I don’t remember it. My dad got shot a couple of years later for a gambling debt.
-
-        Oh I remember that one just fine. Not a lot of people know what it feels like to be angry in your bones. I mean they understand. The fosters parents. Everybody understands, for a while. Then they want the angry little kid to do something he knows he can’t do, move on. After a while they stop understanding. They send the angry kid to a boy’s home, I figured it out too late. Yeah I learned to hide the anger, and practice smiling in the mirror. It’s like putting on a mask. So you showed up this one day, in a cool car, pretty girl on your arm. We were so excited! Bruce Wayne, a billionaire orphan? We used to make up stories about you man, legends and you know with the other kids, that’s all it was, just stories, but right when I saw you, I knew who you really were. I’d seen that look on your face before. It’s the same one I taught myself. I don’t why you took the fault for Dent’s murder but I’m still a believer in the Batman. Even if you’re not…
-      </p>
-      <p>
-        But we’ve met before in a Vision. That was a long time ago, I was a kid at St. Swithin’s, It used to be funded by the Wayne Foundation. It’s an orphanage. My mum died when I was small, it was a car accident. I don’t remember it. My dad got shot a couple of years later for a gambling debt.
-
-        Oh I remember that one just fine. Not a lot of people know what it feels like to be angry in your bones. I mean they understand. The fosters parents. Everybody understands, for a while. Then they want the angry little kid to do something he knows he can’t do, move on. After a while they stop understanding. They send the angry kid to a boy’s home, I figured it out too late. Yeah I learned to hide the anger, and practice smiling in the mirror. It’s like putting on a mask. So you showed up this one day, in a cool car, pretty girl on your arm. We were so excited! Bruce Wayne, a billionaire orphan? We used to make up stories about you man, legends and you know with the other kids, that’s all it was, just stories, but right when I saw you, I knew who you really were. I’d seen that look on your face before. It’s the same one I taught myself. I don’t why you took the fault for Dent’s murder but I’m still a believer in the Batman. Even if you’re not…
-      </p>
-    </section>
-  </div>
+  <section class="hero is-medium" :style="{ 'background-color': bgColor }" @mousemove="updateHeroColor">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="subtitle is-size-3 has-text-white has-text-left slogan">
+          Die <strong class="has-text-white">Unabhängige Forschungsstelle Bern</strong> soll zu einer Plattform für unabh. Forschung wachsen, welche projektbezogen, personennah, dynamisch und buerokratiefrei Forschung zu relevanten Themen unterstützt.
+        </h2>
+        <a href="books.html" class="is-size-1 arrow">
+          <strong>&#8594;</strong>
+        </a>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
+import _ from 'lodash'
+
 export default {
-  components: {},
+  data () {
+    return {
+      count: 0,
+      bgColor: 'red'
+    }
+  },
   methods: {
-    doClick () {
-      console.log('hi')
+    updateHeroColor (event) {
+      const x = event.clientX
+      const y = event.clientY
+      console.log('hi', x, y)
+      let r = this.map(x, 0, 1200, 0, 255)
+      let g = this.map(y, 0, 500, 0, 255)
+      let b = 0
+      r = _.clamp(r, 0, 255)
+      g = _.clamp(g, 0, 255)
+      b = _.clamp(b, 0, 255)
+      this.bgColor = this.rgbstring(r, g, b)
+      console.log('this.bgColor', this.bgColor)
+    },
+    map (n, domainStart, domainEnd, rangeStart, rangeEnd) {
+      const amt = n / (domainEnd - domainStart)
+      return rangeStart + amt * (rangeEnd - rangeStart)
+    },
+    rgbstring (r, g, b) {
+      return 'rgb(' + [r, g, b].join(',') + ')'
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-</style>
+
+@import '@/assets/scss/main.scss';
+
+.slogan{
+    max-width: 700px;
+    line-height: 37px;
+}
+
+.slogan strong{
+   color: white;
+}
+
+.arrow{
+    line-height: 32px;
+    color: white;
+}
+
+.dynamic-backround{
+    background-color: green;
+}
+
+</style>>
