@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <h2 class="subtitle is-size-3 has-text-white has-text-left slogan">
-          Die <strong class="has-text-white">Unabhängige Forschungsstelle Bern</strong> soll zu einer Plattform für unabh. Forschung wachsen, welche projektbezogen, personennah, dynamisch und buerokratiefrei Forschung zu relevanten Themen unterstützt.
+          Die <strong class="has-text-white underline">Unabhängige Forschungsstelle Bern</strong> soll zu einer Plattform für unabh. Forschung wachsen, welche projektbezogen, personennah, dynamisch und buerokratiefrei Forschung zu relevanten Themen unterstützt.
         </h2>
         <a href="books.html" class="is-size-1 arrow">
           <strong>&#8594;</strong>
@@ -27,15 +27,15 @@ export default {
     updateHeroColor (event) {
       const x = event.clientX
       const y = event.clientY
-      console.log('hi', x, y)
+      // console.log('hi', x, y)
       let r = this.map(x, 0, 1200, 0, 255)
       let g = this.map(y, 0, 500, 0, 255)
-      let b = 0
+      let b = 100
       r = _.clamp(r, 0, 255)
       g = _.clamp(g, 0, 255)
       b = _.clamp(b, 0, 255)
       this.bgColor = this.rgbstring(r, g, b)
-      console.log('this.bgColor', this.bgColor)
+      // console.log('this.bgColor', this.bgColor)
     },
     map (n, domainStart, domainEnd, rangeStart, rangeEnd) {
       const amt = n / (domainEnd - domainStart)
@@ -55,6 +55,7 @@ export default {
 .slogan{
     max-width: 700px;
     line-height: 37px;
+    font-weight: 600;
 }
 
 .slogan strong{
@@ -68,6 +69,10 @@ export default {
 
 .dynamic-backround{
     background-color: green;
+}
+
+.underline{
+    text-decoration: underline;
 }
 
 </style>>
