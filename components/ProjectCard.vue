@@ -14,7 +14,9 @@
           </div> -->
         <div class="media-content">
           <p class="title is-4">
-            {{ title }}
+            <nuxt-link :to="projectUrl">
+              {{ title }}
+            </nuxt-link>
           </p>
           <p class="subtitle is-6">
             {{ subtitle }}
@@ -30,10 +32,16 @@
 <script>
 export default {
   props: {
+    id: String,
     title: String,
     subtitle: String,
     content: String,
     image: String
+  },
+  computed: {
+    projectUrl () {
+      return '/projects/' + this.id
+    }
   }
 }
 </script>
