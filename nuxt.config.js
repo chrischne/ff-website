@@ -48,7 +48,8 @@ export default {
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
     // '@nuxtjs/bulma'
     '@nuxtjs/style-resources',
-    '@nuxtjs/font-awesome'
+    '@nuxtjs/font-awesome',
+    '@nuxtjs/markdownit'
   ],
   styleRessources: {
     scss: '~/assets/scss/main.scss'
@@ -64,6 +65,9 @@ export default {
         icons: ['faDev', 'faFacebook', 'faTwitter', 'faInstagram', 'faYoutube', 'faGithub']
       }
     ]
+  },
+  markdownit: {
+    injected: true
   },
   /*
   ** Build configuration
