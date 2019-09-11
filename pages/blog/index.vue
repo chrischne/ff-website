@@ -8,7 +8,7 @@
 export default {
   computed: {
     blogPosts () {
-      return this.$store.state.posts.blogPosts
+      return this.$store.state.blogPosts
     }
   }
 }
