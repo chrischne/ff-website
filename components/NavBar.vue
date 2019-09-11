@@ -2,7 +2,7 @@
   <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img class="navbar-item" src="~assets/logo3.png">
+        <img class="navbar-item" src="/logo3.png">
       </a>
       <div class="navbar-item has-text-weight-bold is-size-2 is-uppercase narrow">
         <!-- The ReSEARCH Lab -->
