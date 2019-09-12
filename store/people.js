@@ -1,18 +1,64 @@
 export const state = () => ({
   all: [
     {
-      id: 'neff',
+      id: 12,
       name: 'Patrick Neff',
-      role: 'Co-Founder',
-      description: 'Lorem ipsum dolor amet typewriter ennui slow-carb snackwave bitters selvage. Tacos austin banjo, enamel pin raclette gentrify vinyl artisan pitchfork. Biodiesel YOLO neutra you probably havent heard of them wolf pickled jianbing listicle 3 wolf moon gochujang kickstarter. Snackwave man braid XOXO austin bicycle rights. Cornhole biodiesel before they sold out gastropub pour-over 8-bit franzen, flannel bespoke. Biodiesel fanny pack post-ironic kogi small batch pork belly selfies hexagon 90s kickstarter literally marfa bushwick art party vaporware. Pork belly lomo pickled jianbing tilde, migas schlitz fixie hella lumbersexual ennui.',
-      image: '/img/people/patrick-neff.jpg'
+      role: 'Co-Founder'
     },
     {
-      id: 'schneider',
+      id: 11,
       name: 'Christian Schneider',
-      role: 'Co-Founder',
-      description: "Pug mumblecore deep v selfies chicharrones schlitz edison bulb yuccie subway tile four loko sustainable echo park intelligentsia marfa. Stumptown sustainable brunch roof party skateboard. Mlkshk DIY master cleanse, copper mug disrupt mustache meh dreamcatcher normcore you probably haven't heard of them tacos. Quinoa kombucha four dollar toast drinking vinegar disrupt freegan shabby chic. Swag man bun pitchfork food truck cloud bread listicle, microdosing brunch. Blog offal flannel listicle, echo park cornhole disrupt.",
-      image: 'https://thispersondoesnotexist.com/image'
+      role: 'Co-Founder'
+    },
+    {
+      'id': 1,
+      'name': 'Leanne Graham',
+      'role': 'Collaborator'
+    },
+    {
+      'id': 2,
+      'name': 'Ervin Howell',
+      'role': 'Collaborator'
+    },
+    {
+      'id': 3,
+      'name': 'Clementine Bauch',
+      'role': 'Collaborator'
+    },
+    {
+      'id': 4,
+      'name': 'Patricia Lebsack',
+      'role': 'Collaborator'
+    },
+    {
+      'id': 5,
+      'name': 'Chelsey Dietrich',
+      'role': 'Collaborator'
+    },
+    {
+      'id': 6,
+      'name': 'Dennis Schulist',
+      'role': 'Collaborator'
+    },
+    {
+      'id': 7,
+      'name': 'Kurtis Weissnat',
+      'role': 'Collaborator'
+    },
+    {
+      'id': 8,
+      'name': 'Nicholas Runolfsdottir',
+      'role': 'Collaborator'
+    },
+    {
+      'id': 9,
+      'name': 'Glenna Reichert',
+      'role': 'Collaborator'
+    },
+    {
+      'id': 10,
+      'name': 'Clementina DuBuque',
+      'role': 'Collaborator'
     }
   ]
 })

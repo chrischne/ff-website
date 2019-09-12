@@ -5,26 +5,30 @@
         <ProjectCard :title="project.title" :subtitle="project.subtitle" :content="project.content" :image="project.image" />
       </div>
     </div> -->
-    <ProjectCard :title="project.title" :subtitle="project.subtitle" :content="project.content" :image="project.image" />
+    <Project :id="project.id" :title="project.title" :subtitle="project.subtitle" :content="project.content" :image="project.image" />
   </section>
 </template>
 
 <script>
-import ProjectCard from '@/components/ProjectCard'
+import Project from '@/components/Project'
 
 export default {
   components: {
-    ProjectCard
+    Project
   },
   data () {
     return {
       id: this.$route.params.id
-
     }
   },
   computed: {
     project () {
       return this.$store.state.projects.all.find(p => p.id === this.id)
+    }
+  },
+  methods: {
+    randomImage () {
+      return 'https://i.pravatar.cc/800'
     }
   }
 }
