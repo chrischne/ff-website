@@ -8,7 +8,7 @@
     <div class="card-content">
       <div class="media">
         <div class="media-content">
-          <p class="title is-4">
+          <p class="title is-5">
             {{ name }}
           </p>
           <p class="subtitle is-6">
@@ -63,5 +63,9 @@ export default {
 <style scoped>
 img{
     filter: grayscale(100%);
+}
+
+.card-content{
+  padding-left: 0;
 }
 </style>
