@@ -59,10 +59,14 @@ export default {
   }
 }
 </script>
-
 <style scoped>
+
 img{
     filter: grayscale(100%);
+}
+
+.card{
+  box-shadow: none;
 }
 
 .card-content{
