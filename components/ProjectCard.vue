@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card-image">
-      <figure class="image is-4by3">
+      <figure class="image is-16by9">
         <nuxt-link :to="projectUrl">
           <img :src="image" alt="Placeholder image">
         </nuxt-link>
@@ -52,8 +52,8 @@ export default {
 
 <style scoped>
 img{
-    filter: grayscale(90%);
-    opacity: 0.9;
+    filter: grayscale(80%);
+    opacity: 1;
 
 }
 </style>

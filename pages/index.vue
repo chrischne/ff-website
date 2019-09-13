@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-medium is-fullheight-with-navbar has-background" :style="{ 'background-color': bgColor }" @mousemove="doNothing">
+  <section class="hero is-medium is-fullheight-with-navbar has-background" :style="{ 'background-color': bgColor }">
     <img alt="Title Background" class="hero-background is-transparent is-4x3" src="/bahnstrasse44.jpg">
     <div class="hero-body">
       <div class="container">
@@ -49,11 +49,12 @@ export default {
     },
     rgbstring (r, g, b) {
       return 'rgb(' + [r, g, b].join(',') + ')'
-    }
-  },
-  doNothing () {
+    },
+    doNothing (event) {
 
+    }
   }
+
 }
 </script>
 
