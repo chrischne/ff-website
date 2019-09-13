@@ -24,7 +24,7 @@
 
     <div id="navbarBasicExample" class="navbar-menu" :class="{'is-active': isOpen}">
       <div class="navbar-end">
-        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/">
+        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/" exact>
           Home
         </nuxt-link>
         <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/projects">
@@ -37,12 +37,12 @@
         <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/about">
           About
         </nuxt-link>
-        <a class="navbar-item has-text-weight-semibold is-size-6a is-uppercase">
+        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/join">
           Join
-        </a>
-        <a class="navbar-item has-text-weight-semibold is-size-6a is-uppercase">
+        </nuxt-link>
+        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/contact">
           Contact
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </nav>
@@ -58,6 +58,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+a:hover, .nuxt-link-active{
+  text-decoration: underline;
+}
 </style>
