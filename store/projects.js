@@ -10,14 +10,14 @@ export const state = () => ({
     {
       id: 'stresslevel',
       title: 'Intensive Yard',
-      subtitle: 'Stress Level Monitoring at work',
+      subtitle: 'Stress Level Monitoring',
       content: 'Now for many within vaunted or despair childe, mote to harold can blast not, lowly of which all pomp deigned. Befell it these mirthful delight was. Not festal uncouth time.',
       image: '/img/projects/image2.jpg'
     },
     {
       id: 'neurodesign',
       title: 'Weeknight',
-      subtitle: 'Random Longitude measurements',
+      subtitle: 'Random measurements',
       content: 'His present and name from caught festal if. Waste breast isle cell would calm fountain. What seemed sore know despair that name not. Companie of beyond could soon low and.',
       image: '/img/projects/image3.jpg'
     },
@@ -73,7 +73,7 @@ export const state = () => ({
     {
       id: 'trombone',
       title: 'Early Trombone',
-      subtitle: 'Extreme low latency Tinnitus',
+      subtitle: 'Low freqency Tinnitus',
       content: '',
       image: '/img/projects/image11.png'
     }

@@ -83,6 +83,8 @@
             It could be said that d’Erlette[4] suggests that we have to
             choose between the postsemanticist paradigm of reality and Marxist class.
           </p>
+          <h3>Conclusion</h3>
+          <p>Cold-pressed chia squid marfa swag hella, PBR&B chartreuse. Deep v franzen godard tattooed meditation hoodie PBR&B keytar intelligentsia pop-up ennui gluten-free. Organic chia wayfarers, crucifix narwhal portland roof party cornhole messenger bag brunch bicycle rights farm-to-table. Yuccie ennui microdosing, shabby chic actually trust fund austin palo santo.</p>
         </div>
       </div>
     </div>

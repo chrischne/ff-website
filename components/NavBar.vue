@@ -1,11 +1,14 @@
 <template>
   <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img class="navbar-item" src="/logo3.png">
-      </a>
-      <div class="navbar-item has-text-weight-bold is-size-2 is-uppercase narrow">
-        <!-- The ReSEARCH Lab -->
+      <img class="navbar-item planet" src="/planet.svg" width="100" height="100">
+      <!-- <div class="navbar-item has-text-weight-bold is-size-6a is-uppercase narrow"> -->
+      <!-- The ReSEARCH Lab -->
+      <!-- </div> -->
+      <div class="navbar-item has-text-weight-bold is-size-6a is-uppercase">
+        <nuxt-link to="/" exact style="text-decoration: none">
+          Unabhängige<br >Forschungsstelle
+        </nuxt-link>
       </div>
       <a
         role="button"
@@ -62,4 +65,8 @@ export default {
 a:hover, .nuxt-link-active{
   text-decoration: underline;
 }
+.planet{
+  margin-left: 1rem;
+}
+
 </style>
