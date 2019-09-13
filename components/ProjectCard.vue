@@ -2,7 +2,9 @@
   <div class="card">
     <div class="card-image">
       <figure class="image is-4by3">
-        <img :src="image" alt="Placeholder image">
+        <nuxt-link :to="projectUrl">
+          <img :src="image" alt="Placeholder image">
+        </nuxt-link>
       </figure>
     </div>
     <div class="card-content">
@@ -25,9 +27,9 @@
           </div>
         </div>
       </div>
-      <div class="content is-small">
+      <!-- <div class="content is-small">
         {{ content }}
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -50,6 +52,8 @@ export default {
 
 <style scoped>
 img{
-    filter: grayscale(80%);
+    filter: grayscale(90%);
+    opacity: 0.9;
+
 }
 </style>

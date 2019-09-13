@@ -32,7 +32,7 @@ export const state = () => ({
       id: 'mobieeg',
       title: 'Helium Ninth',
       subtitle: 'Rare Strawberry Planet',
-      content: 'Shrine friends delight by that it seemed a, childe lines favour feere uses fulness a of. Drugged degree times sun me seraphs if. On far little friend goodly of, awake.',
+      content: '',
       image: '/img/projects/image1.jpg'
     }
   ]

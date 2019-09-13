@@ -1,6 +1,6 @@
 <template>
   <section class="hero is-medium is-fullheight-with-navbar has-background" :style="{ 'background-color': bgColor }" @mousemove="doNothing">
-    <img alt="Title Background" class="hero-background is-transparent" src="https://source.unsplash.com/1920x1080/?space">
+    <img alt="Title Background" class="hero-background is-transparent is-4x3" src="/bahnstrasse44.jpg">
     <div class="hero-body">
       <div class="container">
         <h2 class="subtitle is-size-3 has-text-left slogan">
@@ -96,7 +96,8 @@ export default {
   height: 100%;
 }
 .hero-background.is-transparent {
-  opacity: 0.3;
+  opacity: 0.5;
+  filter: grayscale(80%);
 }
 
 </style>>
