@@ -1,6 +1,6 @@
 <template>
   <section class="hero is-medium is-fullheight-with-navbar has-background" :style="{ 'background-color': bgColor }">
-    <img alt="Title Background" class="hero-background is-transparent is-4x3" src="/bahnstrasse44.jpg">
+    <img alt="Title Background" class="hero-background is-transparent is-4x3" src="/bahnstrasse44.jpg" :class="{ load: doLoad, unload: !doLoad }">
     <div class="hero-body">
       <div class="container">
         <h2 class="subtitle is-size-3 has-text-left slogan">
@@ -26,8 +26,15 @@ export default {
   data () {
     return {
       count: 0,
-      bgColor: 'none'
+      bgColor: 'none',
+      doLoad: false
     }
+  },
+  mounted () {
+    setTimeout(() => {
+      console.log('load')
+      this.doLoad = true
+    }, 100)
   },
   methods: {
     updateHeroColor (event) {
@@ -97,8 +104,22 @@ export default {
   height: 100%;
 }
 .hero-background.is-transparent {
-  opacity: 0.5;
+
   filter: grayscale(80%);
+
+}
+
+.unload{
+  opacity: 0;
+}
+
+.load{
+  opacity: 0.8;
+   -webkit-transition: opacity 1s ease-in;
+       -moz-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+         -o-transition: opacity 1s ease-in;
+            transition: opacity 1s ease-in;
 }
 
 </style>>
