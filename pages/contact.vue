@@ -60,7 +60,8 @@ export default {
 </script>
 
 <style scoped>
+
 .container{
-/* border: 1px solid black; */
+    max-width: 960px
 }
 </style>

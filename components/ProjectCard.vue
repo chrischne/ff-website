@@ -13,17 +13,19 @@
             </figure>
           </div> -->
         <div class="media-content">
-          <p class="title is-4">
-            <nuxt-link :to="projectUrl">
-              {{ title }}
-            </nuxt-link>
-          </p>
-          <p class="subtitle is-6">
-            {{ subtitle }}
-          </p>
+          <div class="content is-small">
+            <h1 class="title is-5">
+              <nuxt-link :to="projectUrl">
+                {{ title }}
+              </nuxt-link>
+            </h1>
+            <p class="subtitle is-6">
+              {{ subtitle }}
+            </p>
+          </div>
         </div>
       </div>
-      <div class="content">
+      <div class="content is-small">
         {{ content }}
       </div>
     </div>

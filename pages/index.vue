@@ -1,13 +1,14 @@
 <template>
-  <section class="hero is-medium" :style="{ 'background-color': bgColor }" @mousemove="updateHeroColor">
+  <section class="hero is-medium is-fullheight-with-navbar has-background" :style="{ 'background-color': bgColor }" @mousemove="doNothing">
+    <img alt="Title Background" class="hero-background is-transparent" src="https://source.unsplash.com/1920x1080/?space">
     <div class="hero-body">
       <div class="container">
-        <h2 class="subtitle is-size-3 has-text-white has-text-left slogan">
-          Die <strong class="has-text-white underline">Unabhängige Forschungsstelle Bern</strong> soll zu einer Plattform für unabh. Forschung wachsen, welche projektbezogen, personennah, dynamisch und buerokratiefrei Forschung zu relevanten Themen unterstützt.
+        <h2 class="subtitle is-size-3 has-text-left slogan">
+          Die <strong class="underline">Unabhängige Forschungsstelle Bern</strong> soll zu einer Plattform für unabh. Forschung wachsen, welche projektbezogen, personennah, dynamisch und buerokratiefrei Forschung zu relevanten Themen unterstützt.
         </h2>
-        <a href="books.html" class="is-size-1 arrow">
+        <nuxt-link to="/projects" class="is-size-1 arrow">
           <strong>&#8594;</strong>
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </section>
@@ -25,7 +26,7 @@ export default {
   data () {
     return {
       count: 0,
-      bgColor: 'red'
+      bgColor: 'none'
     }
   },
   methods: {
@@ -49,6 +50,9 @@ export default {
     rgbstring (r, g, b) {
       return 'rgb(' + [r, g, b].join(',') + ')'
     }
+  },
+  doNothing () {
+
   }
 }
 </script>
@@ -64,12 +68,12 @@ export default {
 }
 
 .slogan strong{
-   color: white;
+  //  color: black;
 }
 
 .arrow{
     line-height: 32px;
-    color: white;
+   color: #4a4a4a;
 }
 
 .dynamic-backround{
@@ -78,6 +82,21 @@ export default {
 
 .underline{
     text-decoration: underline;
+}
+
+.hero.has-background {
+  position: relative;
+  overflow: hidden;
+}
+.hero-background {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.hero-background.is-transparent {
+  opacity: 0.3;
 }
 
 </style>>

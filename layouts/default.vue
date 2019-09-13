@@ -3,7 +3,7 @@
     <NavBar />
     <nuxt />
     <footer class="footer">
-      <div class="content">
+      <div class="content has-text-centered">
         <p>
           The Independent Research Lab, Bahnstrasse 44, CH-3008 Bern, info@ufsb.ch
         </p>

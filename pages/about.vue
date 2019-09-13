@@ -15,7 +15,11 @@
               About
             </h3>
             <p>
-              From broken he the head of, or oh demons nodded of let murmured at liftednevermore here. The surely stood and of of if chamber meaninglittle lining. Laden tinkled a the thing on till, heard was upstarting but air morrow from the, long hope to or there gileadtell just smiling bust, by the entreating a bust thy with so implore ever, fantastic have till is grim get my on doubting farther. Darkness nothing that made maiden lenore till then. From evermore burning pondered angels and, to fancy friends lordly while from seat, have surcease me this spoken raven. Songs my is land the, heart bird i out of. Soul unto my with plutonian, still mefilled bird take footfalls now myself, over pallas something lining thy. Said the in chamber entreating all. Raven laden visiter sad outpour said core maiden uttered. From dirges this horror heaven mortals methought nothing, to my of wind usby. The spoke plume there fantastic evilprophet then its, engaged his of god quaint dirges usby whispered fowl, the being a before raven wondering, fast had take thy as as turning of, startled doubtless thy ever and quaff for. Lent and is what yet pondered. Fantastic the was that evermore lenore these thou i meant, many the you yore stillness mefilled. My one thee the or bird only as me muttered, explore bore i god the the ghost for. Maiden god no soul by said of. His plume my much the flitting. On angels has nothing still discourse. And its uncertain by see front here be, burden no madam above the nothing chamber demons. Both the pallid still radiant, gloated i that shutter bird my entrance stately is before. Sign stillness plainly he on the a, heaven let nameless the on chamber bird of. Hath usby oer bird velvet take tapping what beguiling i. Lenore broken on had madam entreating and in radiant, fast i of i cried at of thee upon his, and i sat silence the a, then let chamber my streaming into unto i. I ungainly then and tapping into and. I grew reply still seeming of, this quaff at the much upon. Dreams ghastly but the some spoken an name. Stopped many bird sure have nearly. The an than hopes flown least ease some weary, tis the fluttered this truly stayed. The the if made this me fancy pallas. Here truly morrow door no raven..
+              Lorem ipsum dolor amet meh farm-to-table gentrify, cray vegan green juice forage tote bag tilde unicorn tattooed small batch. Mixtape truffaut banh mi pour-over everyday carry woke 90's lomo. Fanny pack swag coloring book shoreditch, brunch four loko iceland. Chia meh yr, banh mi synth freegan tattooed chillwave try-hard seitan. Cloud bread gastropub church-key, asymmetrical kinfolk knausgaard meditation man braid cred vegan retro meh small batch live-edge. Shabby chic leggings banh mi art party readymade sartorial bicycle rights.
+
+              Tattooed poke mixtape crucifix mlkshk biodiesel neutra sartorial readymade leggings marfa af subway tile before they sold out jean shorts. Tofu kale chips taxidermy, wolf leggings vegan unicorn taiyaki coloring book wayfarers cliche. Biodiesel lyft swag, live-edge tote bag pok pok cornhole hella copper mug. Tbh edison bulb bushwick viral authentic helvetica. Flexitarian microdosing chia meh drinking vinegar mustache edison bulb leggings offal, hammock etsy selvage actually street art helvetica.
+
+              Prism blog vice kale chips la croix typewriter, poutine +1 air plant schlitz austin you probably haven't heard of them franzen. Craft beer offal put a bird on it YOLO actually occupy hammock butcher adaptogen pug. Jianbing helvetica coloring book semiotics irony iPhone before they sold out +1. Neutra cold-pressed portland, XOXO copper mug synth migas quinoa. Actually meggings mumblecore coloring book vape. Mustache aesthetic yr pop-up, trust fund pok pok sustainable live-edge scenester tbh health goth.
             </p>
           </div>
         </div>
@@ -30,6 +34,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.container{
+    max-width: 960px
+}
 </style>

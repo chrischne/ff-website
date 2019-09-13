@@ -19,7 +19,7 @@
       <div class="column">
         <div class="content is-small">
           <h1>
-            Project description
+            Project abstract
           </h1>
           <p>
             Stopped was with with heard angels deep balm be door in, its bird just the i then still lattice have. Bird while bird of grim, name the and tufted i door than saintly eagerly bleak. Agreeing raven and me bird darkness. Youhere this weary was both on here, me god purple my flutter visiter as for. Nevermore of distant a.
@@ -54,6 +54,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.container{
+    max-width: 960px
+}
 </style>
