@@ -34,9 +34,9 @@
         <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/people">
           People
         </nuxt-link>
-        <a class="navbar-item has-text-weight-semibold is-size-6a is-uppercase">
+        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/about">
           About
-        </a>
+        </nuxt-link>
         <a class="navbar-item has-text-weight-semibold is-size-6a is-uppercase">
           Join
         </a>
