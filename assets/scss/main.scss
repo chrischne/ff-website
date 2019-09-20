@@ -63,4 +63,14 @@ $footer-background-color: $white;
 //$family-sans-serif: Avenir, sans-serif;
 
 
+
+  .page-enter-active, .page-leave-active {
+    transition: opacity .5s
+  }
+  .page-enter, .page-leave-active {
+    opacity: 0
+  }
+  
+
+
 @import '~bulma';
