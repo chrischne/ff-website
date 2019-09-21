@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav class="navbar has-shadow is-fixed-top is-hidden-print" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <img class="navbar-item planet" src="/planet.svg" width="80" height="80">
       <!-- <div class="navbar-item has-text-weight-bold is-size-6a is-uppercase narrow"> -->
@@ -69,5 +69,9 @@ a:hover, .nuxt-link-active{
   margin-left: 1rem;
   /* margin-right: -1rem; */
 }
-
+@media print {
+.is-hidden-print {
+display: none !important;
+}
+}
 </style>
