@@ -24,6 +24,9 @@ collections:
     label: 'Projects'
     folder: 'assets/content/projects'
     create: true
+    editor:
+      preview: true
+    fields:
     - { label: 'Title', name: 'title', widget: 'string' }
     - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
     - { label: 'Image', name: 'image', widget: 'image' }
