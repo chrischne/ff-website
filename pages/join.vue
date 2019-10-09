@@ -7,7 +7,7 @@
           here comes a membership form or some kind of third party subscription thing
         </h2>
         <div class="columns">
-          <div class="column is-6-tablet is-6-desktop is-6-widescreen">
+          <!-- <div class="column is-6-tablet is-6-desktop is-6-widescreen">
             <LineChart
               data-path="data.csv"
               title="Title"
@@ -30,7 +30,7 @@
               y-label="y-Achse"
               :ticks="5"
             />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -39,11 +39,11 @@
 
 <script>
 
-import LineChart from '@/components/LineChart'
+// import LineChart from '@/components/LineChart'
 
 export default {
   components: {
-    LineChart
+    // LineChart
   }
 }
 </script>
