@@ -78,17 +78,17 @@ export default {
 </script>
 
 <style scoped>
-.column{
+/* .column{
     border: 1px solid black;
-}
+} */
 
 section {
     page-break-before: always;
 }
-.column{
+/* .column{
     page-break-before: auto;
     page-break-inside: avoid;
     page-break-after: unset;
-}
+} */
 
 </style>

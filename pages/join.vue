@@ -48,8 +48,8 @@ export default {
 }
 </script>
 
-<style>
-  .column{
-    border: 1px solid black;
-  }
+<style scoped>
+   /* .column{
+    border: 1px solid green;
+  } */
 </style>
