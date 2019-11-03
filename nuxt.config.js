@@ -49,7 +49,8 @@ export default {
     // '@nuxtjs/bulma'
     '@nuxtjs/style-resources',
     '@nuxtjs/font-awesome',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    'nuxt-i18n'
   ],
   styleRessources: {
     scss: '~/assets/scss/main.scss'
