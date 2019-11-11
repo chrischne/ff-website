@@ -1,6 +1,8 @@
-# nuxt-bulma
+# FF Website
 
-> My primo Nuxt.js project
+Test URL:
+https://laughing-khorana-f7242a.netlify.com
+
 
 ## Build Setup
 
