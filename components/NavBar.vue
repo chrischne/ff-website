@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar has-shadow is-fixed-top is-hidden-print" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top is-hidden-print" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <img class="navbar-item planet" src="/planet.svg" width="80" height="80">
       <!-- <div class="navbar-item has-text-weight-bold is-size-6a is-uppercase narrow"> -->
@@ -7,7 +7,7 @@
       <!-- </div> -->
       <div class="navbar-item has-text-weight-bold is-size-6a is-uppercase">
         <nuxt-link to="/" exact style="text-decoration: none">
-          Unabhängige Forschungsstelle
+          Freie Forschung
         </nuxt-link>
       </div>
       <a
@@ -45,6 +45,15 @@
         </nuxt-link>
         <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/contact">
           Contact
+        </nuxt-link>
+        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/planets">
+          Planets
+        </nuxt-link>
+        <nuxt-link :to="switchLocalePath('en')">
+          English
+        </nuxt-link>
+        <nuxt-link :to="switchLocalePath('fr')">
+          Français
         </nuxt-link>
       </div>
     </div>

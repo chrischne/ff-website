@@ -1,14 +1,14 @@
 <template>
   <section class="hero is-medium is-fullheight-with-navbar has-background" :style="{ 'background-color': bgColor }">
-    <img alt="Title Background" class="hero-background is-transparent is-4x3" src="/bahnstrasse44.jpg" :class="{ load: doLoad, unload: !doLoad }">
+    <!-- <img alt="Title Background" class="hero-background is-transparent is-4x3" src="/bahnstrasse44.jpg" :class="{ load: doLoad, unload: !doLoad }"> -->
     <div class="hero-body">
       <div class="container">
-        <h2 class="subtitle is-size-3 has-text-left slogan">
-          Die <strong class="underline">Unabhängige Forschungsstelle Bern</strong> soll zu einer Plattform für unabh. Forschung wachsen, welche projektbezogen, personennah, dynamisch und buerokratiefrei Forschung zu relevanten Themen unterstützt.
+        <h2 class="subtitle is-size-4 has-text-left slogan">
+          <strong class="underline">Freie Forschung</strong> ist eine Plattform, welche projektbezogen, personennah, dynamisch und buerokratiefrei Forschung zu relevanten Themen unterstützt.
         </h2>
-        <nuxt-link to="/projects" class="is-size-1 arrow">
-          <strong>&#8594;</strong>
-        </nuxt-link>
+        <!-- <nuxt-link to="/projects" class="is-size-3 arrow is-vcentered">
+          &#8594;
+        </nuxt-link> -->
       </div>
     </div>
   </section>
@@ -18,11 +18,6 @@
 import _ from 'lodash'
 
 export default {
-  head () {
-    return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
-    }
-  },
   data () {
     return {
       count: 0,
@@ -71,8 +66,8 @@ export default {
 
 .slogan{
     max-width: 700px;
-    line-height: 37px;
-    font-weight: 600;
+    line-height: 28px;
+    font-weight: 400;
 }
 
 .slogan strong{
@@ -80,8 +75,9 @@ export default {
 }
 
 .arrow{
-    line-height: 32px;
-   color: #4a4a4a;
+  line-height: 24px;
+
+   color: black;
 }
 
 .dynamic-backround{
