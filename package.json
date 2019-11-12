@@ -18,10 +18,12 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "add": "^2.0.6",
     "d3": "^4.13.0",
+    "d3-force-magnetic": "^0.8.1",
     "lodash": "^4.17.15",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.3.0",
-    "sszvis": "^2.0.3"
+    "sszvis": "^2.0.3",
+    "vector2d": "^3.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
