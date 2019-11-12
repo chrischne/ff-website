@@ -1,9 +1,7 @@
 <template>
   <section class="section">
     <div class="container">
-      <svg id="canvas" width="800" height="600" viewBox="-400 -300 800 600">
-        <circle id="center" r="20" cx="0" cy="0" />
-      </svg>
+      <svg id="canvas" width="800" height="600" viewBox="-400 -300 800 600" />
     </div>
   </section>
 </template>
@@ -32,18 +30,52 @@ export default {
 
     d3.forceMagnetic = d3ForceMagnetic
 
-    // const height = 600
+    const height = 600
     // const width = 800
-    const attractionForce = 0.001 // Regulates orbitting velocity
+    // const attractionForce = 0.001 // Regulates orbitting velocity
     // const attractionForce2 = 0.0001
-    const mercury = { id: 'mercury', x: -50, y: 50, mass: 1 }
-    const venus = { id: 'venus', x: 100, y: 100, mass: 1 }
-    const earth = { id: 'earth', x: 0, y: -70, mass: 1 }
 
-    const planets = [mercury, venus, earth]
+    const orbitDistance = height / 5
+    const orbitDistance2 = height / 10
+    // const G = 1e-3 * orbitDistance ** 3 // Proportional to cube of orbit distance to maintain behavior over different heights
+    const G = 100
+    const centralMass = 1
+
+    const orbitalV = Math.sqrt(G * centralMass / orbitDistance)
+    const orbitalV2 = Math.sqrt(G * centralMass / orbitDistance2)
+
+    const initialV = orbitalV; const numPnts = 5000
+    const initialV2 = orbitalV2
+    const satellite = {
+      mass: 0.05,
+      x: 0,
+      y: -orbitDistance,
+      vx: initialV,
+      vy: 0
+    }
+
+    const satellite2 = {
+      mass: 0.05,
+      x: 0,
+      y: -orbitDistance2,
+      vx: initialV2,
+      vy: 0
+    }
+
+    const bodies = [
+      { mass: centralMass },
+      satellite,
+      satellite2
+    ]
+
+    // const mercury = { id: 'mercury', x: -50, y: 50, mass: 1 }
+    // const venus = { id: 'venus', x: 100, y: 100, mass: 1 }
+    // const earth = { id: 'earth', x: 0, y: -70, mass: 10 }
+
+    // const planets = [mercury, venus, earth]
 
     const circles = d3.select('#canvas').selectAll('.planet')
-      .data(planets)
+      .data(bodies)
       .enter()
       .append('circle')
       .classed('planet', true)
@@ -69,19 +101,22 @@ export default {
     const forceSim = d3.forceSimulation()
       .alphaDecay(0)
       .velocityDecay(0)
+      // .stop()
       .force('gravity', d3.forceMagnetic()
-        .id(d => d.id)
+        .strength(G)
         .charge(d => d.mass)
       )
+      .nodes(bodies)
       .on('tick', () => {
+        console.log('thick')
         circles.attr('cx', d => d.x)
         circles.attr('cy', d => d.y)
       })
 
     // Spin the particles
     // const center = new Vec2D.Vector(0, 0)
-    // console.log('vector')
-    // console.log(center.length())
+    // // console.log('vector')
+    // // console.log(center.length())
     // const s = Math.sqrt(attractionForce)
     // planets.forEach((p) => {
     //   const v = new Vec2D.Vector(p.x, p.y)
