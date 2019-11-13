@@ -9,7 +9,7 @@
 <script>
 
 import * as d3 from 'd3'
-// import _ from 'lodash'
+import _ from 'lodash'
 import * as Vec2D from 'vector2d'
 import d3ForceMagnetic from 'd3-force-magnetic'
 
@@ -45,9 +45,20 @@ export default {
     const mercury = { id: 'mercury' }
     const venus = { id: 'venus' }
     const earth = { id: 'earth' }
-    const planets = [mercury, venus, earth]
+    const mars = { id: 'mars' }
+    const jupiter = { id: 'jupiter' }
+    const saturn = { id: 'saturn' }
+    const uranus = { id: 'uranus' }
+    const neptun = { id: 'neptun' }
+    const pluto = { id: 'pluto' }
 
-    const distanceScale = d3.scaleLinear().domain([0, planets.length]).range([0, height])
+    const planets = [mercury, venus, earth, mars, jupiter, saturn, uranus, neptun, pluto]
+
+    for (let i = 0; i < 10; i++) {
+      planets.push({})
+    }
+
+    const distanceScale = d3.scaleLinear().domain([0, planets.length]).range([40, height / 2 - 50])
 
     planets.forEach((p, i) => {
       const orbitDistance = distanceScale(i + 1)
@@ -58,6 +69,7 @@ export default {
       p.y = -orbitDistance
       p.vx = initialV
       p.vy = 0
+      p.completed = _.random(0, 1) > 0.5
     })
 
     const bodies = [sun].concat(planets)
@@ -69,35 +81,32 @@ export default {
       .classed('planet', true)
       .attr('cx', d => d.x)
       .attr('cy', d => d.y)
-      .attr('r', 6)
+      .attr('r', (d) => {
+        return d.id === 'sun' ? 30 : _.random(1, 8)
+      })
+      .style('fill', d => (d.id === 'sun' || d.completed) ? 'none' : 'black')
+      .style('stroke-width', d => d.id === 'sun' ? 3 : 1)
+      .style('stroke', d => (d.id === 'sun' || d.completed) ? 'black' : 'none')
 
-    // d3.forceSimulation()
-    //   .alphaDecay(0)
-    //   .velocityDecay(0)
-    //   .nodes(planets)
-    // // Pull towards center with weak force
-    //   .force('centerX', d3.forceX().strength(attractionForce))
-    //   .force('centerY', d3.forceY().strength(attractionForce))
-    //   // .force('center', d3.forceCenter())
-    //   .on('tick', () => {
-    //     // console.log('tick')
-    //     circles.attr('cx', d => d.x)
-    //     circles.attr('cy', d => d.y)
-    //     // circles.attr('r', _.random(1, 10))
-    //   })
-
-    const forceSim = d3.forceSimulation()
+    const sim = d3.forceSimulation()
       .alphaDecay(0)
       .velocityDecay(0)
       .force('gravity', d3.forceMagnetic()
         .strength(G)
         .charge(d => d.mass)
       )
+      .stop()
       .nodes(bodies)
       .on('tick', () => {
         circles.attr('cx', d => d.x)
         circles.attr('cy', d => d.y)
       })
+
+    for (let i = 0; i < 1000; i++) {
+      sim.tick()
+    }
+
+    sim.restart()
 
     // Spin the particles
     // const center = new Vec2D.Vector(0, 0)
@@ -124,7 +133,7 @@ export default {
 <style>
 
 svg{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 </style>
