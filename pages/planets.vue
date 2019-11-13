@@ -31,48 +31,36 @@ export default {
     d3.forceMagnetic = d3ForceMagnetic
 
     const height = 600
-    // const width = 800
-    // const attractionForce = 0.001 // Regulates orbitting velocity
-    // const attractionForce2 = 0.0001
+    const width = 800
 
-    const orbitDistance = height / 5
-    const orbitDistance2 = height / 10
-    // const G = 1e-3 * orbitDistance ** 3 // Proportional to cube of orbit distance to maintain behavior over different heights
-    const G = 100
     const centralMass = 1
+    const G = 100
 
-    const orbitalV = Math.sqrt(G * centralMass / orbitDistance)
-    const orbitalV2 = Math.sqrt(G * centralMass / orbitDistance2)
-
-    const initialV = orbitalV; const numPnts = 5000
-    const initialV2 = orbitalV2
-    const satellite = {
-      mass: 0.05,
+    const sun = {
+      id: 'sun',
+      mass: centralMass,
       x: 0,
-      y: -orbitDistance,
-      vx: initialV,
-      vy: 0
+      y: 0
     }
+    const mercury = { id: 'mercury' }
+    const venus = { id: 'venus' }
+    const earth = { id: 'earth' }
+    const planets = [mercury, venus, earth]
 
-    const satellite2 = {
-      mass: 0.05,
-      x: 0,
-      y: -orbitDistance2,
-      vx: initialV2,
-      vy: 0
-    }
+    const distanceScale = d3.scaleLinear().domain([0, planets.length]).range([0, height])
 
-    const bodies = [
-      { mass: centralMass },
-      satellite,
-      satellite2
-    ]
+    planets.forEach((p, i) => {
+      const orbitDistance = distanceScale(i + 1)
+      console.log('orbitDistance', i, orbitDistance)
+      const orbitalV = Math.sqrt(G * centralMass / orbitDistance)
+      const initialV = orbitalV
+      p.x = 0
+      p.y = -orbitDistance
+      p.vx = initialV
+      p.vy = 0
+    })
 
-    // const mercury = { id: 'mercury', x: -50, y: 50, mass: 1 }
-    // const venus = { id: 'venus', x: 100, y: 100, mass: 1 }
-    // const earth = { id: 'earth', x: 0, y: -70, mass: 10 }
-
-    // const planets = [mercury, venus, earth]
+    const bodies = [sun].concat(planets)
 
     const circles = d3.select('#canvas').selectAll('.planet')
       .data(bodies)
@@ -101,14 +89,12 @@ export default {
     const forceSim = d3.forceSimulation()
       .alphaDecay(0)
       .velocityDecay(0)
-      // .stop()
       .force('gravity', d3.forceMagnetic()
         .strength(G)
         .charge(d => d.mass)
       )
       .nodes(bodies)
       .on('tick', () => {
-        console.log('thick')
         circles.attr('cx', d => d.x)
         circles.attr('cy', d => d.y)
       })
