@@ -1,0 +1,4 @@
+---
+slogan: Freie Forschung ist eine Plattform, welche projektbezogen, personennah, dynamisch und buerokratiefrei Forschung zu relevanten Themen unterstützt.
+---
+
