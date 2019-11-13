@@ -1,7 +1,9 @@
 ---
+id: mobieeg
+locale: de
 title: Rocky Running Flannel
 subtitle: Mobile EEG-Überwachung
-image: /static/img/image1.jpg
+image: img/projects/image1.jpg
 abstract: In den Werken von Tarantino ist der Begriff der textuellen Realität ein vorherrschender Begriff. In gewissem Sinne ist Dahmus der Ansicht, dass wir zwischen prädekonstruktiver Kulturtheorie und postdialektischem Objektivismus wählen müssen. In den Werken von Joyce ist ein vorherrschender Begriff die Unterscheidung zwischen innen und außen. Lacan fördert den Einsatz der neokulturellen Texttheorie, um den Kapitalismus herauszufordern.
 ---
 

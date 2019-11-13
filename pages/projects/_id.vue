@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     project () {
-      return this.$store.state.projects.de.find(p => p.id === this.id)
+      return this.$store.state.projects.en.all.find(p => p.id === this.id)
     }
   },
   methods: {
