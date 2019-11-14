@@ -3,6 +3,7 @@
     <div class="columns is-multiline">
       <div v-for="(project,index) in projects" :key="index" class="column is-6-tablet is-4-desktop is-3-widescreen">
         <ProjectCard :id="project.id" :title="project.title" :subtitle="project.subtitle" :content="project.content" :image="project.image" />
+        {{ project }}
       </div>
     </div>
   </section>
@@ -21,7 +22,11 @@ export default {
   },
   computed: {
     projects () {
-      return this.$store.state.projects.en.all
+      // return this.$store.state.projects.en.all
+      return this.$store.state.projects[this.locale].all
+    },
+    locale () {
+      return this.$i18n.locale
     }
   }
 }

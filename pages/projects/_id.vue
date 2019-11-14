@@ -5,7 +5,14 @@
         <ProjectCard :title="project.title" :subtitle="project.subtitle" :content="project.content" :image="project.image" />
       </div>
     </div> -->
-    <Project :id="project.id" :title="project.title" :subtitle="project.subtitle" :content="project.content" :image="project.image" />
+    <Project
+      :id="project.id"
+      :title="project.title"
+      :subtitle="project.subtitle"
+      :abstract="project.abstract"
+      :content="project.bodyHtml"
+      :image="project.image"
+    />
   </section>
 </template>
 
@@ -23,7 +30,10 @@ export default {
   },
   computed: {
     project () {
-      return this.$store.state.projects.en.all.find(p => p.id === this.id)
+      return this.$store.state.projects[this.locale].all.find(p => p.id === this.id)
+    },
+    locale () {
+      return this.$i18n.locale
     }
   },
   methods: {

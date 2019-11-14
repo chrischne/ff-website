@@ -3,7 +3,8 @@
     <div class="card-image">
       <figure class="image is-16by9">
         <nuxt-link :to="projectUrl">
-          <img :src="image" alt="Placeholder image">
+          <!-- <img :src="require(`@/assets/img/projects/image1.jpg`)" alt="Placeholder image"> -->
+          <img :src="imageUrl" alt="Placeholder image">
         </nuxt-link>
       </figure>
     </div>
@@ -45,6 +46,9 @@ export default {
   computed: {
     projectUrl () {
       return '/projects/' + this.id
+    },
+    imageUrl () {
+      return require(`@/assets/${this.image}`)
     }
   }
 }
