@@ -27,41 +27,39 @@
 
     <div id="navbarBasicExample" class="navbar-menu" :class="{'is-active': isOpen}">
       <div class="navbar-end">
-        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/" exact>
-          Home
+        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('index')" exact>
+          {{ $t('home') }}
         </nuxt-link>
-        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/projects">
-          Projects
+        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('projects')">
+          {{ $t('projects') }}
         </nuxt-link>
-
-        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/people">
-          People
+        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('people')">
+          {{ $t('people') }}
         </nuxt-link>
-        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/about">
-          About
+        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('about')">
+          {{ $t('about') }}
         </nuxt-link>
-        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/join">
-          Join
+        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('join')">
+          {{ $t('join') }}
         </nuxt-link>
-        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/contact">
-          Contact
+        <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('contact')">
+          {{ $t('contact') }}
         </nuxt-link>
         <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/planets">
           Planets
         </nuxt-link>
-        <nuxt-link :to="switchLocalePath('en')">
-          English
-        </nuxt-link>
-        <nuxt-link :to="switchLocalePath('fr')">
-          Français
-        </nuxt-link>
+        <LangSwitcher />
       </div>
     </div>
   </nav>
 </template>
 
 <script>
+import LangSwitcher from '@/components/LangSwitcher'
 export default {
+  components: {
+    LangSwitcher
+  },
   data () {
     return {
       isOpen: false

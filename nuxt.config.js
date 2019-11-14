@@ -88,19 +88,26 @@ export default {
     }
   },
   i18n: {
-    locales: ['en', 'fr', 'es'],
+    locales: ['de', 'en'],
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
       messages: {
         en: {
-          welcome: 'Welcome'
+          home: 'Home',
+          projects: 'Projects',
+          people: 'People',
+          about: 'About',
+          join: 'Join',
+          contact: 'Contact'
         },
-        fr: {
-          welcome: 'Bienvenue'
-        },
-        es: {
-          welcome: 'Bienvenido'
+        de: {
+          home: 'Home',
+          projects: 'Projekte',
+          people: 'Leute',
+          about: 'Über uns',
+          join: 'Mitmachen',
+          contact: 'Kontakt'
         }
       }
     }
