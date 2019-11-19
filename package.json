@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-bulma",
+  "name": "ff-website",
   "version": "1.0.0",
-  "description": "My primo Nuxt.js project",
+  "description": "FF Website",
   "author": "chrischne",
   "private": true,
   "scripts": {
