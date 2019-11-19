@@ -5,8 +5,9 @@
   "author": "chrischne",
   "private": true,
   "scripts": {
+    "dev2": "npm run process && npm run dev",
     "dev": "nuxt",
-    "processmd": "processmd \"markdown/**/*.{yml,md}\" --no-highlightCode --no-includeBase --no-includeExt --no-includeSourceBase --no-includeSourceExt --no-includeDir --outputDir assets/content",
+    "process": "processmd \"_markdown/**/*.{yml,md}\" --no-highlightCode --no-includeBase --no-includeExt --no-includeSourceBase --no-includeSourceExt --no-includeDir --outputDir assets/content",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
