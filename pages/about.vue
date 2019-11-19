@@ -4,7 +4,8 @@
       <div class="columns">
         <div class="column">
           <figure class="image is-4x3">
-            <img src="https://picsum.photos/1920/1080">
+            <!-- <img src="https://picsum.photos/1920/1080"> -->
+            <img src="@/assets/img/bahnstrasse44.jpg" alt="" class="desaturate">
           </figure>
         </div>
       </div>
@@ -37,5 +38,9 @@ export default {
 <style scoped>
 .container{
     max-width: 960px
+}
+
+.desaturate{
+  filter: saturate(50%);
 }
 </style>
