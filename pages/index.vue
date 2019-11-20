@@ -96,19 +96,19 @@ export default {
 }
 
 .hero{
-  border: 5px solid green;
+  // border: 5px solid green;
 }
 
 .hero-body{
-  border: 5px solid red;
+  // border: 5px solid red;
 }
 
 .slogan{
-  border: 1px solid blue;
+  // border: 1px solid blue;
 }
 
 .planets{
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
 
 }
 
