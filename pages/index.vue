@@ -75,10 +75,12 @@ export default {
     max-width: 700px;
     line-height: 28px;
     font-weight: 400;
+    margin-top: 15rem;
 }
 
 .slogan strong{
   //  color: black;
+
 }
 
 .arrow{
