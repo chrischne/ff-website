@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div :class="{ card: true, active: selected, inactive: !selected}" @mouseover="selectCard()" @mouseout="unselectCard()">
     <div class="card-image">
       <figure class="image is-16by9">
         <nuxt-link :to="projectUrl">
@@ -43,12 +43,25 @@ export default {
     content: String,
     image: String
   },
+  data () {
+    return {
+      selected: false
+    }
+  },
   computed: {
     projectUrl () {
       return '/projects/' + this.id
     },
     imageUrl () {
       return require(`@/assets/${this.image}`)
+    }
+  },
+  methods: {
+    selectCard () {
+      this.selected = true
+    },
+    unselectCard () {
+      this.selected = false
     }
   }
 }
@@ -58,6 +71,18 @@ export default {
 img{
     filter: grayscale(80%);
     opacity: 1;
-
 }
+
+.active{
+box-shadow: 1.5em;
+}
+
+.inactive{
+box-shadow: none;
+}
+
+.card{
+  border: 1px solid #eeeeee;
+}
+
 </style>
