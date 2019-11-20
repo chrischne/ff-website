@@ -2,7 +2,10 @@
   <div>
     <svg id="canvas" width="100%" height="50%" :viewBox="bounds">
       <g>
-        <text :x="0" :y="0">Freie Forschung</text>
+        <!-- <text :x="0" :y="0">2F Labs</text> -->
+        <text :x="0" :y="0">FFFF</text>
+        <!-- <text :x="0" :y="0">Freie Forschung</text>
+        <text :x="0" :y="0">FF</text> -->
       </g>
     </svg>
   </div>
@@ -127,7 +130,7 @@ export default {
       .attr('r', (d) => {
         return d.id === 'sun' ? 0 : _.random(2, 3)
       })
-      .style('fill', d => (d.id === 'sun' || d.completed) ? 'none' : 'rgba(0,0,0,0.7)')
+      .style('fill', d => (d.id === 'sun' || d.completed) ? 'none' : 'rgba(0,0,0,0.6)')
       .style('stroke-width', d => d.id === 'sun' ? 3 : 1)
       .style('stroke', d => (d.id === 'sun' || d.completed) ? 'black' : 'none')
 
