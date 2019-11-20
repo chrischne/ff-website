@@ -1,9 +1,5 @@
 # FF Website
 
-Test URL:
-https://laughing-khorana-f7242a.netlify.com
-
-
 ## Build Setup
 
 ``` bash
