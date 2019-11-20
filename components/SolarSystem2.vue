@@ -3,9 +3,9 @@
     <svg id="canvas" width="100%" height="50%" :viewBox="bounds">
       <g>
         <!-- <text :x="0" :y="0">2F Labs</text> -->
-        <text :x="0" :y="0">FFFF</text>
-        <!-- <text :x="0" :y="0">Freie Forschung</text>
-        <text :x="0" :y="0">FF</text> -->
+        <!-- <text :x="0" :y="0">FFFF</text> -->
+        <text :x="0" :y="0">Freie Forschung</text>
+        <!-- <text :x="0" :y="0">FF</text> -->
       </g>
     </svg>
   </div>
@@ -195,7 +195,7 @@ export default {
 <style>
 
 svg{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 svg text {
