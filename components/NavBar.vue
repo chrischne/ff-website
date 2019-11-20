@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar is-fixed-top is-hidden-print  has-shadow" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top is-hidden-print" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
         <!-- <img class="navbar-item planet" src="/planet.svg" width="80" height="80">
@@ -40,15 +40,15 @@
           <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('about')">
             {{ $t('about') }}
           </nuxt-link>
-          <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('join')">
+          <!-- <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('join')">
             {{ $t('join') }}
-          </nuxt-link>
+          </nuxt-link> -->
           <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('contact')">
             {{ $t('contact') }}
           </nuxt-link>
-          <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/planets">
+          <!-- <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/planets">
             Planets
-          </nuxt-link>
+          </nuxt-link> -->
         </div>
         <div class="navbar-menu locale-menu">
           <div class="navbar-end">
