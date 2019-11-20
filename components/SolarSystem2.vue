@@ -61,22 +61,54 @@ export default {
 
     const planets = [mercury, venus, earth, mars, jupiter, saturn, uranus, neptun, pluto]
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 1000; i++) {
       planets.push({})
     }
 
     const distanceScale = d3.scaleLinear().domain([0, planets.length]).range([40, height / 2 - 50])
-
+    // const s = Math.sqrt(attractionForce)
+    // planets.forEach((p) => {
+    //   const v = new Vec2D.Vector(p.x, p.y)
+    //   v.subtract(center)
+    //   v.rotate(0.5 * Math.PI)
+    //   v.mulS(s)
+    //   p.vx = v.x
+    //   p.vy = v.y
+    // })
+    // planets.forEach((p, i) => {
+    //   const orbitDistance = distanceScale(i + 1)
+    //   console.log('orbitDistance', i, orbitDistance)
+    //   const orbitalV = Math.sqrt(G * centralMass / orbitDistance)
+    //   const initialV = orbitalV
+    //   p.x = 0
+    //   p.y = -orbitDistance
+    //   p.vx = initialV
+    //   p.vy = 0
+    //   p.completed = _.random(0, 1) > 0.5
+    // })
+    const center = new Vec2D.Vector(0, 0)
     planets.forEach((p, i) => {
-      const orbitDistance = distanceScale(i + 1)
+      const orbitDistance = this.randomGaussian(-10, height / 2, 1) // _.random(200, height / 2 - 50) // distanceScale(i + 1)
       console.log('orbitDistance', i, orbitDistance)
       const orbitalV = Math.sqrt(G * centralMass / orbitDistance)
       const initialV = orbitalV
-      p.x = 0
-      p.y = -orbitDistance
-      p.vx = initialV
-      p.vy = 0
-      p.completed = _.random(0, 1) > 0.5
+      const theta = _.random(0, 2 * Math.PI)
+      const v = new Vec2D.Vector(0, -orbitDistance)
+      v.rotate(theta)
+
+      p.x = v.x
+      p.y = v.y
+
+      // calculate velocity
+      const vel = new Vec2D.Vector(p.x, p.y)
+      vel.subtract(center)
+      vel.rotate(0.5 * Math.PI)
+      vel.normalise()
+      vel.mulS(initialV)
+
+      p.vx = vel.x
+      p.vy = vel.y
+      p.completed = 0 // _.random(0, 1) > 0.5
     })
 
     const bodies = [sun].concat(planets)
@@ -89,13 +121,14 @@ export default {
       .attr('cx', d => d.x)
       .attr('cy', d => d.y)
       .attr('r', (d) => {
-        return d.id === 'sun' ? 30 : _.random(1, 8)
+        return d.id === 'sun' ? 10 : _.random(2, 3)
       })
-      .style('fill', d => (d.id === 'sun' || d.completed) ? 'none' : 'black')
+      .style('fill', d => (d.id === 'sun' || d.completed) ? 'black' : 'rgba(0,0,0,0.6)')
       .style('stroke-width', d => d.id === 'sun' ? 3 : 1)
       .style('stroke', d => (d.id === 'sun' || d.completed) ? 'black' : 'none')
 
     const sim = d3.forceSimulation()
+      .alpha(1)
       .alphaDecay(0)
       .velocityDecay(0)
       .force('gravity', d3.forceMagnetic()
@@ -109,9 +142,9 @@ export default {
         circles.attr('cy', d => d.y)
       })
 
-    for (let i = 0; i < 1000; i++) {
-      sim.tick()
-    }
+    // for (let i = 0; i < 1000; i++) {
+    //   sim.tick()
+    // }
 
     sim.restart()
 
@@ -133,6 +166,21 @@ export default {
     // particle.vx = 0.2 * height * Math.sqrt(attractionForce)
     // particle2.y = -height * 0.3
     // particle2.vx = 0.3 * height * Math.sqrt(attractionForce)
+  },
+  methods: {
+    randomGaussian (min, max, skew) {
+      let u = 0; let v = 0
+      while (u === 0) { u = Math.random() } // Converting [0,1) to (0,1)
+      while (v === 0) { v = Math.random() }
+      let num = Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v)
+
+      num = num / 10.0 + 0.5 // Translate to 0 -> 1
+      if (num > 1 || num < 0) { num = this.randomGaussian(min, max, skew) } // resample between 0 and 1 if out of range
+      num = num ** skew // Skew
+      num *= max - min // Stretch to fill range
+      num += min // offset to min
+      return num
+    }
   }
 }
 </script>
@@ -140,7 +188,7 @@ export default {
 <style>
 
 svg{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 </style>

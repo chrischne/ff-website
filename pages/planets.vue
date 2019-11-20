@@ -1,16 +1,16 @@
 <template>
   <div class="section">
     <div class="container">
-      <SolarSystem width="800" height="600" />
+      <SolarSystem2 :width="800" :height="600" />
     </div>
   </div>
 </template>
 
 <script>
-import SolarSystem from '@/components/SolarSystem'
+import SolarSystem2 from '@/components/SolarSystem2'
 export default {
   components: {
-    SolarSystem
+    SolarSystem2
   }
 }
 </script>
