@@ -2,7 +2,8 @@
   <section class="hero is-medium is-fullheight-with-navbar has-background" :style="{ 'background-color': bgColor }">
     <!-- <img alt="Title Background" class="hero-background is-transparent is-4x3" src="/bahnstrasse44.jpg" :class="{ load: doLoad, unload: !doLoad }"> -->
     <div class="planets hero-background">
-      <SolarSystem :width="1000" :height="600" />
+      <!-- <SolarSystem :width="1000" :height="600" /> -->
+      <SolarSystem2 :width="1000" :height="600" />
     </div>
     <div class="hero-body">
       <div class="container">
@@ -19,11 +20,13 @@
 
 <script>
 import _ from 'lodash'
-import SolarSystem from '@/components/SolarSystem'
+// import SolarSystem from '@/components/SolarSystem'
+import SolarSystem2 from '@/components/SolarSystem2'
 
 export default {
   components: {
-    SolarSystem
+    // SolarSystem,
+    SolarSystem2
   },
   data () {
     return {
