@@ -9,8 +9,10 @@
     "dev": "nuxt",
     "process": "processmd \"_markdown/**/*.{yml,md}\" --no-highlightCode --no-includeBase --no-includeExt --no-includeSourceBase --no-includeSourceExt --no-includeDir --outputDir assets/content",
     "build": "nuxt build",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
@@ -35,6 +37,7 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "node-sass": "^4.12.0",
     "processmd": "^4.5.0",
+    "push-dir": "^0.4.1",
     "sass-loader": "^8.0.0"
   }
 }
