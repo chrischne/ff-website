@@ -3,16 +3,24 @@
     <!-- <img alt="Title Background" class="hero-background is-transparent is-4x3" src="/bahnstrasse44.jpg" :class="{ load: doLoad, unload: !doLoad }"> -->
     <div class="planets hero-background">
       <!-- <SolarSystem :width="1000" :height="600" /> -->
-      <SolarSystem2 :width="1000" :height="600" />
+      <div class="soli">
+        <SolarSystem2 :width="1000" :height="600" />
+      </div>
     </div>
     <div class="hero-body">
       <div class="container">
-        <h2 class="subtitle is-size-4 has-text-left slogan">
+        <!-- <h2 class="subtitle is-size-4  slogan is-centered">
           <strong class="underline">Freie Forschung</strong> ist eine Plattform, welche projektbezogen, personennah, dynamisch und buerokratiefrei Forschung zu relevanten Themen unterstützt.
-        </h2>
+        </h2> -->
         <!-- <nuxt-link to="/projects" class="is-size-3 arrow is-vcentered">
           &#8594;
         </nuxt-link> -->
+
+        <!-- <div class="hola1 columns is-centered transparent-background">
+          <div class="hola2 column is-5 slogan">
+            <h2><strong class="underline">Freie Forschung</strong> ist eine Plattform, welche projektbezogen, personennah, dynamisch und buerokratiefrei Forschung zu relevanten Themen unterstützt.</h2>
+          </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -74,11 +82,22 @@ export default {
 
 @import '@/assets/scss/main.scss';
 
+.transparent-background{
+  background-color: rgba(255,255,255,0.5);
+}
+.hola1{
+  // border: 1px solid black;
+
+}
+
+.hola2{
+//     border: 1px solid green;
+ }
 .slogan{
-    max-width: 700px;
+    // max-width: 500px;
     line-height: 28px;
     font-weight: 400;
-    margin-top: 15rem;
+    // margin-top: 15rem;
 }
 
 .slogan strong{
@@ -93,28 +112,11 @@ export default {
 }
 
 .dynamic-backround{
-    background-color: green;
+    // background-color: green;
 }
 
 .underline{
     text-decoration: underline;
-}
-
-.hero{
-  // border: 5px solid green;
-}
-
-.hero-body{
-  // border: 5px solid red;
-}
-
-.slogan{
-  // border: 1px solid blue;
-}
-
-.planets{
-  // border: 1px solid yellow;
-
 }
 
 .hero.has-background {
@@ -127,6 +129,7 @@ export default {
   object-position: center center;
   width: 100%;
   height: 100%;
+  // border: 1px solid green;
 }
 .hero-background.is-transparent {
 

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <svg id="canvas" :width="width" :height="height" :viewBox="bounds">
+    <svg id="canvas" width="100%" height="50%" :viewBox="bounds">
       <g>
-        <text :x="0" :y="0">FF</text>
+        <text :x="0" :y="0">Freie Forschung</text>
       </g>
     </svg>
   </div>
@@ -22,7 +22,7 @@ export default {
   },
   computed: {
     bounds () {
-      return '-400 -300 800 600'
+      return '-500 -300 1000 600'
     }
   },
   updated () {
@@ -65,7 +65,7 @@ export default {
 
     const planets = [mercury, venus, earth, mars, jupiter, saturn, uranus, neptun, pluto]
 
-    for (let i = 0; i < 500; i++) {
+    for (let i = 0; i < 1000; i++) {
       planets.push({})
     }
 
@@ -92,7 +92,7 @@ export default {
     // })
     const center = new Vec2D.Vector(0, 0)
     planets.forEach((p, i) => {
-      const orbitDistance = this.randomGaussian(0, height / 2 - 100, 1) // _.random(200, height / 2 - 50) // distanceScale(i + 1)
+      const orbitDistance = this.randomGaussian(0, height / 2, 1) // _.random(200, height / 2 - 50) // distanceScale(i + 1)
       console.log('orbitDistance', i, orbitDistance)
       const orbitalV = Math.sqrt(G * centralMass / orbitDistance)
       const initialV = orbitalV
@@ -127,7 +127,7 @@ export default {
       .attr('r', (d) => {
         return d.id === 'sun' ? 0 : _.random(2, 3)
       })
-      .style('fill', d => (d.id === 'sun' || d.completed) ? 'none' : 'rgba(0,0,0,0.8)')
+      .style('fill', d => (d.id === 'sun' || d.completed) ? 'none' : 'rgba(0,0,0,0.7)')
       .style('stroke-width', d => d.id === 'sun' ? 3 : 1)
       .style('stroke', d => (d.id === 'sun' || d.completed) ? 'black' : 'none')
 
@@ -192,12 +192,12 @@ export default {
 <style>
 
 svg{
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 svg text {
   fill: black;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   text-anchor: middle;
   alignment-baseline: central
