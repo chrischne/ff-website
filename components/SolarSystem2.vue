@@ -92,7 +92,7 @@ export default {
     // })
     const center = new Vec2D.Vector(0, 0)
     planets.forEach((p, i) => {
-      const orbitDistance = this.randomGaussian(-10, height / 2 - 50, 1) // _.random(200, height / 2 - 50) // distanceScale(i + 1)
+      const orbitDistance = this.randomGaussian(0, height / 2 - 100, 1) // _.random(200, height / 2 - 50) // distanceScale(i + 1)
       console.log('orbitDistance', i, orbitDistance)
       const orbitalV = Math.sqrt(G * centralMass / orbitDistance)
       const initialV = orbitalV
@@ -127,7 +127,7 @@ export default {
       .attr('r', (d) => {
         return d.id === 'sun' ? 0 : _.random(2, 3)
       })
-      .style('fill', d => (d.id === 'sun' || d.completed) ? 'black' : 'rgba(0,0,0,0.8)')
+      .style('fill', d => (d.id === 'sun' || d.completed) ? 'none' : 'rgba(0,0,0,0.8)')
       .style('stroke-width', d => d.id === 'sun' ? 3 : 1)
       .style('stroke', d => (d.id === 'sun' || d.completed) ? 'black' : 'none')
 
@@ -197,7 +197,7 @@ svg{
 
 svg text {
   fill: black;
-  font-size: 6rem;
+  font-size: 2rem;
   font-weight: 700;
   text-anchor: middle;
   alignment-baseline: central
