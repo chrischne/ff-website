@@ -71,6 +71,9 @@ $footer-background-color: $white;
     opacity: 0
   }
   
+.section{
+  min-height: 85vh;
+}
 
 
 @import '~bulma';
