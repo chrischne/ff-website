@@ -39,9 +39,9 @@ export default {
     // store these in a variable
     // in tick you do circles.attr("dx", d=> d.x)...
 
-    console.log('mounted')
-    console.log(d3.version)
-    console.log(d3ForceMagnetic)
+    // console.log('mounted')
+    // console.log(d3.version)
+    // console.log(d3ForceMagnetic)
 
     d3.forceMagnetic = d3ForceMagnetic
 
@@ -97,7 +97,7 @@ export default {
     const center = new Vec2D.Vector(0, 0)
     planets.forEach((p, i) => {
       const orbitDistance = this.randomGaussian(0, height / 2, 1) // _.random(200, height / 2 - 50) // distanceScale(i + 1)
-      console.log('orbitDistance', i, orbitDistance)
+      //  console.log('orbitDistance', i, orbitDistance)
       const orbitalV = Math.sqrt(G * centralMass / orbitDistance)
       const initialV = orbitalV
       const theta = _.random(0, 2 * Math.PI)
