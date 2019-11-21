@@ -1,7 +1,7 @@
 ---
 sort: 2
 locale: en
-name: Christian Schneiderrrrr
+name: Christian Schneider
 role: Co-Founder
 image: img/people/schneider.jpeg
 ---
