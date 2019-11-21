@@ -5,6 +5,7 @@
         <!-- <text :x="0" :y="0">2F Labs</text> -->
         <!-- <text :x="0" :y="0">FFFF</text> -->
         <!-- <text :x="0" :y="0">Freie Forschung</text> -->
+        <!-- <text :x="0" :y="0">ф</text> -->
         <text :x="0" :y="0">FF</text>
       </g>
     </svg>

@@ -34,5 +34,25 @@ export const actions = {
       return res
     })
     await commit('people/setPeople', people)
+
+    console.log('load about files')
+    const aboutEn = await require('~/assets/content/about_en.json')
+    const aboutDe = await require('~/assets/content/about_de.json')
+
+    // console.log('aboutEn')
+    // console.log(aboutEn)
+    // console.log('aboutDe')
+    // console.log(aboutDe)
+
+    await commit('about/setAbout', [aboutEn, aboutDe])
+
+    // const people = peopleFiles.keys().map((key) => {
+    //   const res = peopleFiles(key)
+    //   // console.log('res')
+    //   // console.log(res)
+    //   // res.slug = key.slice(2, -5)
+    //   return res
+    // })
+    // await commit('people/setPeople', people)
   }
 }

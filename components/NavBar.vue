@@ -8,7 +8,7 @@
         <!-- </div> -->
         <div class="navbar-item has-text-weight-bold is-size-6a is-uppercase">
           <nuxt-link to="/" exact style="text-decoration: none">
-            Freie Forschung
+            FF Freie Forschung
           </nuxt-link>
         </div>
         <a
