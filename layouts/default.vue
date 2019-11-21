@@ -29,4 +29,5 @@ export default {
   /* max-width: 300px; */
   font-weight: 800;
 }
+
 </style>

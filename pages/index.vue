@@ -9,6 +9,9 @@
     </div>
     <div class="hero-body">
       <div class="container">
+        <!-- <div class="test">
+          Through the 1950s, many major features were pioneered in the field of operating systems on mainframe computers, including batch processing, input/output interrupt, buffering, multitasking, spooling, runtime libraries, link-loading, and programs for sorting records in files. These features were included or not included in application software at the option of application programmers, rather than in a separate operating system used by all applications. In 1959, the SHARE Operating System was released as an integrated utility for the IBM 704, and later in the 709 and 7090 mainframes, although it was quickly supplanted by IBSYS/IBJOB on the 709, 7090 and 7094
+        </div> -->
         <!-- <h2 class="subtitle is-size-4  slogan is-centered">
           <strong class="underline">Freie Forschung</strong> ist eine Plattform, welche projektbezogen, personennah, dynamisch und buerokratiefrei Forschung zu relevanten Themen unterstützt.
         </h2> -->
@@ -85,14 +88,13 @@ export default {
 .transparent-background{
   background-color: rgba(255,255,255,0.5);
 }
-.hola1{
-  // border: 1px solid black;
-
+.test{
+  font-family: "CoFoSans-Regular", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: black;
+  max-width: 700px;
 }
-
-.hola2{
-//     border: 1px solid green;
- }
 .slogan{
     // max-width: 500px;
     line-height: 28px;

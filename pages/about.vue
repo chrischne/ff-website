@@ -16,7 +16,7 @@
               {{ title }}
             </h3>
 
-            <p v-html="content" />
+            <p class="about-content" v-html="content" />
           </div>
         </div>
       </div>
@@ -54,6 +54,20 @@ export default {
 <style scoped>
 .container{
     max-width: 960px
+}
+
+h3{
+  font-family: "CoFoSans-Regular", Arial, sans-serif;
+  color: darkcyan;
+  font-weight: 700;
+}
+
+.about-content{
+
+  font-family: "CoFoSans-Regular", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: black;
 }
 
 .desaturate{

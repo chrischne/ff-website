@@ -1,6 +1,11 @@
 //@import 'bulma/sass/utilities/_all.sass';
 @import '~bulma/sass/utilities/initial-variables'; @import '~bulma/sass/utilities/functions';
 
+@font-face {
+  font-family: 'CoFoSans-Regular';
+  src: url('~assets/fonts/CoFoSans-Regular.woff2') format('woff2')
+}
+
 // Set your brand colors
 // $purple: #8A4D76;
 // $pink: #FA7C91;
@@ -9,7 +14,7 @@
 // $beige-lighter: #EFF0EB;
 
 // // Update Bulma's global variables
-//$family-sans-serif: "Nunito", sans-serif;
+$family-sans-serif: "CoFoSans-Regular", sans-serif;
 //$family-sans-serif: sans-serif;
 
 // $grey-dark: $brown;
@@ -36,7 +41,7 @@
 
 // Add a serif family
 //$family-serif:  -apple-system, system-ui, sans-serif;
-$family-sans-serif: -apple-system, system-ui, sans-serif;
+//$family-sans-serif: -apple-system, system-ui, sans-serif;
 //$navbar-item-img-max-height: 70px;
 
 
