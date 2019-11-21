@@ -5,7 +5,7 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          F Forschung, Bahnstrasse 44, CH-3008 Bern, info@ff.vision
+          Freie Forschung, Bahnstrasse 44, CH-3008 Bern, info@ff.vision
         </p>
       </div>
     </footer>
