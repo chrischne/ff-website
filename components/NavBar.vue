@@ -1,12 +1,12 @@
 <template>
-  <nav class="navbar is-fixed-top is-hidden-print" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top is-hidden-print gradient-background" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
         <!-- <img class="navbar-item planet" src="/planet.svg" width="80" height="80">
       <div class="navbar-item has-text-weight-bold is-size-6a is-uppercase narrow"> -->
         <!-- The ReSEARCH Lab -->
         <!-- </div> -->
-        <div class="navbar-item has-text-weight-bold is-size-6a is-uppercase">
+        <div class="navbar-item is-size-5a is-uppercase">
           <nuxt-link to="/" exact style="text-decoration: none">
             Freie Forschung
           </nuxt-link>
@@ -28,22 +28,22 @@
 
       <div id="navbarBasicExample" class="navbar-menu" :class="{'is-active': isOpen}">
         <div class="navbar-start">
-          <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('index')" exact>
+          <nuxt-link class="navbar-item is-size-5a" :to="localePath('index')" exact>
             {{ $t('home') }}
           </nuxt-link>
-          <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('projects')">
+          <nuxt-link class="navbar-item is-size-5a" :to="localePath('projects')">
             {{ $t('projects') }}
           </nuxt-link>
-          <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('people')">
+          <nuxt-link class="navbar-item is-size-5a" :to="localePath('people')">
             {{ $t('people') }}
           </nuxt-link>
-          <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('about')">
+          <nuxt-link class="navbar-item is-size-5a" :to="localePath('about')">
             {{ $t('about') }}
           </nuxt-link>
           <!-- <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('join')">
             {{ $t('join') }}
           </nuxt-link> -->
-          <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('contact')">
+          <nuxt-link class="navbar-item is-size-5a" :to="localePath('contact')">
             {{ $t('contact') }}
           </nuxt-link>
           <!-- <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/planets">
@@ -96,6 +96,11 @@ a:hover, .nuxt-link-active{
 .planet{
   margin-left: 1rem;
   /* margin-right: -1rem; */
+}
+
+.gradient-background{
+  background-color: transparent;
+  background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));
 }
 
 .navbar-menu{

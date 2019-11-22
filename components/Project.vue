@@ -17,10 +17,10 @@
         </h2>
       </div>
       <div class="column">
-        <div class="content is-small">
-          <h1>
+        <div class="content">
+          <h3>
             Project abstract
-          </h1>
+          </h3>
           <p>
             {{ abstract }}
           </p>
@@ -29,7 +29,7 @@
     </div>
     <div class="columns">
       <div class="column">
-        <div class="content" v-html="content" />
+        <div class="content is-size-5a" v-html="content" />
       </div>
     </div>
   </div>
@@ -57,4 +57,9 @@ export default {
 .container{
     max-width: 960px
 }
+
+/* .content{
+ color: black;
+} */
+
 </style>
