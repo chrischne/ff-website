@@ -3,10 +3,12 @@
     <NavBar />
     <nuxt />
     <footer class="footer">
-      <div class="content has-text-centered is-size-5a">
-        <p>
-          Freie Forschung, Bahnstrasse 44, CH-3008 Bern, info@ff.vision
-        </p>
+      <div class="container">
+        <div class="content">
+          <p class="is-size-5a">
+            Freie Forschung, Bahnstrasse 44, CH-3008 Bern, info@ff.vision
+          </p>
+        </div>
       </div>
     </footer>
   </div>
