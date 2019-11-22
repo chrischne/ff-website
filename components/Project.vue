@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="is-capped-width">
     <div class="columns">
       <div class="column">
         <figure class="image is-4x3">
@@ -9,9 +9,9 @@
     </div>
     <div class="columns">
       <div class="column">
-        <h1 class="title">
+        <h2 class="title">
           {{ title }}
-        </h1>
+        </h2>
         <h2 class="subtitle">
           {{ subtitle }}
         </h2>
@@ -54,9 +54,13 @@ export default {
 </script>
 
 <style scoped>
-.container{
-    max-width: 960px
+
+.is-capped-width{
+   max-width: 960px;
 }
+/* .container{
+    max-width: 960px
+} */
 
 /* .content{
  color: black;

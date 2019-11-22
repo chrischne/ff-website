@@ -5,14 +5,16 @@
         <ProjectCard :title="project.title" :subtitle="project.subtitle" :content="project.content" :image="project.image" />
       </div>
     </div> -->
-    <Project
-      :id="project.id"
-      :title="project.title"
-      :subtitle="project.subtitle"
-      :abstract="project.abstract"
-      :content="project.bodyHtml"
-      :image="project.image"
-    />
+    <div class="container">
+      <Project
+        :id="project.id"
+        :title="project.title"
+        :subtitle="project.subtitle"
+        :abstract="project.abstract"
+        :content="project.bodyHtml"
+        :image="project.image"
+      />
+    </div>
   </section>
 </template>
 
