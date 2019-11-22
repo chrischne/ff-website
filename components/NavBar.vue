@@ -90,9 +90,9 @@ export default {
 </script>
 
 <style scoped>
-a:hover, .nuxt-link-active{
+/* a:hover, .nuxt-link-active{
   text-decoration: underline;
-}
+} */
 .planet{
   margin-left: 1rem;
   /* margin-right: -1rem; */
