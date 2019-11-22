@@ -17,12 +17,12 @@
           </div> -->
         <div class="media-content">
           <div class="content is-small">
-            <h1 class="title">
+            <h1 class="title is-5">
               <nuxt-link :to="projectUrl">
                 {{ title }}
               </nuxt-link>
             </h1>
-            <p class="subtitle">
+            <p class="subtitle is-6">
               {{ subtitle }}
             </p>
           </div>

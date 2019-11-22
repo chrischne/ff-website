@@ -43,9 +43,9 @@
           <!-- <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" :to="localePath('join')">
             {{ $t('join') }}
           </nuxt-link> -->
-          <nuxt-link class="navbar-item is-size-5a" :to="localePath('contact')">
+          <!-- <nuxt-link class="navbar-item is-size-5a" :to="localePath('contact')">
             {{ $t('contact') }}
-          </nuxt-link>
+          </nuxt-link> -->
           <!-- <nuxt-link class="navbar-item has-text-weight-semibold is-size-6a is-uppercase" to="/planets">
             Planets
           </nuxt-link> -->

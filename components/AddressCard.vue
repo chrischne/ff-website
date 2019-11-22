@@ -2,11 +2,11 @@
   <div class="card">
     <div class="card-content">
       <div class="media">
-        <div class="media-content">
-          <p class="title is-5 black-bar">
+        <div class="media-content is-size-5a">
+          <p class="title black-bar">
             {{ title }}
           </p>
-          <p class="is-6 has-text-weight-bold">
+          <p class="is-6">
             {{ name }}
           </p>
           <p>
@@ -56,12 +56,17 @@ export default {
 <style scoped>
 .card{
   box-shadow: none;
+  /* border: 1px solid green; */
 }
 
 .black-bar{
     /* border-bottom: 4px solid #363636;
     max-width: 100px; */
     text-decoration: underline;
+}
+
+.card-content{
+  padding-left: 0;
 }
 
 </style>
