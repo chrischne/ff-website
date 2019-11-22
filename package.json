@@ -32,6 +32,7 @@
     "vector2d": "^3.0.0"
   },
   "devDependencies": {
+    "@nuxtjs/bulma": "^1.2.6",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "babel-eslint": "^10.0.1",
