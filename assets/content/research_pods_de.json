@@ -1,0 +1,6 @@
+{
+  "locale": "de",
+  "title": "Forschungsgefässe",
+  "bodyContent": "### Research Pods\n\n## Research Sprint\nblabla bla \n\n## Residency\nblablabla\n\n## Funded Projects\nblablabla",
+  "bodyHtml": "<h3>Research Pods</h3>\n<h2>Research Sprint</h2>\n<p>blabla bla</p>\n<h2>Residency</h2>\n<p>blablabla</p>\n<h2>Funded Projects</h2>\n<p>blablabla</p>\n"
+}
