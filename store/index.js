@@ -39,12 +39,13 @@ export const actions = {
     const aboutEn = await require('~/assets/content/about_en.json')
     const aboutDe = await require('~/assets/content/about_de.json')
 
-    // console.log('aboutEn')
-    // console.log(aboutEn)
-    // console.log('aboutDe')
-    // console.log(aboutDe)
-
     await commit('about/setAbout', [aboutEn, aboutDe])
+
+    console.log('load research pod files')
+    const podsEn = await require('~/assets/content/research_pods_en.json')
+    const podsDe = await require('~/assets/content/research_pods_de.json')
+
+    await commit('research_pods/setResearchPods', [podsEn, podsDe])
 
     // const people = peopleFiles.keys().map((key) => {
     //   const res = peopleFiles(key)
