@@ -108,7 +108,8 @@ export default {
           people: 'People',
           about: 'About',
           join: 'Join',
-          contact: 'Contact'
+          contact: 'Contact',
+          research_pods: 'Research Pods'
         },
         de: {
           home: 'Home',
@@ -116,7 +117,8 @@ export default {
           people: 'Leute',
           about: 'Über uns',
           join: 'Mitmachen',
-          contact: 'Kontakt'
+          contact: 'Kontakt',
+          research_pods: 'Forschungsgefässe'
         }
       }
     }

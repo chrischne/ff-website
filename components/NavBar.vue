@@ -34,6 +34,9 @@
           <nuxt-link class="navbar-item is-size-5a" :to="localePath('projects')">
             {{ $t('projects') }}
           </nuxt-link>
+          <nuxt-link class="navbar-item is-size-5a" :to="localePath('research_pods')">
+            {{ $t('research_pods') }}
+          </nuxt-link>
           <nuxt-link class="navbar-item is-size-5a" :to="localePath('people')">
             {{ $t('people') }}
           </nuxt-link>
