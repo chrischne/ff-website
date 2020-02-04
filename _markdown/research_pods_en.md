@@ -1,7 +1,7 @@
 ---
 locale: en
 title: Research Pods
-draft
+
 ---
 
 ### Research Pods
