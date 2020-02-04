@@ -14,7 +14,7 @@ The institute is currently devised to be modular and constantly evolving - to na
 ## Research Sprint
 
 A sprint of a research idea, research design, prototype or experiment within a week of focused and structured work. The environment will be distraction-free with pre-set but customisable digital tools. The concept of the Research Sprint Pod is loosely based on Design Sprint principles (#source).
-As an outcome researchers will primarily deliver a report with a clear conclusion and future directions. The report, code/prototypes, pilot data will be published alongside the report under open science principles, Creative Commons licenses, and a DOI on the institute's website.
+As an outcome researchers will primarily deliver a report with a clear conclusion and future directions. The report, code/prototypes, pilot data will be published under open science principles, Creative Commons licenses, and a DOI on the institute's website.
 
 ### Key points:
 
