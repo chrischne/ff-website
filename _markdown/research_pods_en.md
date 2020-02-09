@@ -4,8 +4,6 @@ title: Research Pods
 
 ---
 
-### Research Pods
-
 Currently, three Research Pods are offered with different time spans and budgets.
 The Pods are designed to be able to iterate an idea through increasing levels of engagement, so that results of the Research Sprint could inform a follow up Research Residency which in turn could lead to a full-blown Research Project.
 Topics can be either chosen from own ideas or our cultivated catalogue. In any case, topics and methods should be selected according to ethical standards and good practice in science. Empirical work is favoured.  
