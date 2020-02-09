@@ -18,7 +18,7 @@ In order to produce meaningful and reproducible research, all results or insight
 
 Research should not be limited to common scientific discipline schemata, but rather be able to freely evolve along current opportunities, technologies and needs.
 Trans-, cross-, inter-, or multidisciplinary approaches can be explored and output formats are not fixed. We furthermore encourage researchers to consider different forms of research, communication, and dissemination besides publication in manuscripts or databases: Events, exhibitions, excursions, workshops, performances, AMAs, excursions, panel discussions etc. can therefore be used to reflect research in societal and artistic contexts.
-In-house opportunities 
+These activities can be supported by the in-house and institutional network. 
 
 ## People before processes:
 
@@ -29,16 +29,6 @@ Furthermore, the established structures allow for exploration, proof of concepts
 
 We favour dynamic workflows in which agile and pragmatic research can be performed. Respective techniques are adopted from creative workflows from the fields of design, computer science, and arts. Research ideas can be tested and evaluated in short time windows without structural and organisational interference. Supported by sleek digital infrastructures, a rapid cycle iterative science process will be cultivated. 
 
-
-<!---
-
-## Free from bureaucracy:
-
-To transcend the rigid and innovation-reducing nature of large established structures like classical academia or big tech companies, the sprouting of small, puristic independent research initiatives is currently omnipresent.
-This can be thus seen as a natural evolutionary process and similar developments are can be observed in the independent art scene or tech startups.
-While not all bureaucratic aspects can be completely removed, the institute will internally cultivate sleek and omnidirectionally transparent processes to reduce bureaucratic burden to an absolute minimum. 
-The interfacing of research projects with external entities will be evaluated case by case and common strategies developed towards the common goal.
--->
 
 # Natural growth and the three pillars of the institute
 
